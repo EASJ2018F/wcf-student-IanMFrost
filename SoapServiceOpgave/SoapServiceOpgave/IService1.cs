@@ -14,9 +14,19 @@ namespace SoapServiceOpgave
     {
 
         [OperationContract]
-        string GetData(int value);
+        List<Student> AddStudent();
 
-         AddStudent();
+        [OperationContract]
+        List<Student> FindStudents();
+
+        [OperationContract]
+        List<Student> GetAllStudents();
+
+        [OperationContract]
+        List<Student> RemoveStudent();
+
+        [OperationContract]
+        List<Student> EditStudent();
 
 
 
